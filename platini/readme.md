@@ -1,8 +1,10 @@
+# Bookmark 
+
 before: the html page must include <head><meta name="csrf-token" content="{{ csrf_token() }}" /></head>
 if uoy used jqery plaese before Request execute: $.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});
 
-//#####################################################
-get/bookmarks/
+
+##get/bookmarks/
 
 	Method: GET
 		Resource URL : get/bookmarks/{count}
@@ -25,8 +27,7 @@ get/bookmarks/
 			 }
 		 ]
 
-//#####################################################
-get/bookmark
+##get/bookmark
 
 	Method: GET
 		Resource URL : get/bookmark
@@ -68,8 +69,7 @@ get/bookmark
 		}
 
 
-//#####################################################		
-create/bookmark
+##create/bookmark
 
 	Method: POST
 		Resource URL : create/bookmark
@@ -88,8 +88,7 @@ create/bookmark
 			"updated_at":"2016-09-14 08:08:37"
 		}
 
-//#####################################################		
-bookmark/{uid?}/create/comment
+##bookmark/{uid?}/create/comment
 
 	Method: POST
 		Resource URL : bookmark/{bookmark_uid?}/create/comment
@@ -109,8 +108,7 @@ bookmark/{uid?}/create/comment
 			"updated_at":"2016-09-14 08:08:37"
 		}
 
-//#####################################################
-change/comment/{comment_uid?}
+##change/comment/{comment_uid?}
 
 	Method: PUT
 		Resource URL : change/comment/{comment_uid?}
@@ -135,8 +133,7 @@ change/comment/{comment_uid?}
 if since the establishment in less than a hour then allowed 
 another deadline
 
-//#####################################################
-destroy/comment/{comment_uid?}
+##destroy/comment/{comment_uid?}
 
 	Method: DELETE
 		Resource URL : destroy/comment/{comment_uid?}
@@ -147,4 +144,5 @@ destroy/comment/{comment_uid?}
 //----------------------------------------------------
 if since the establishment in less than a hour then allowed 
 another deadline
+
 
