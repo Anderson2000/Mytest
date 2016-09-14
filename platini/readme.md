@@ -131,7 +131,6 @@ If uoy used jqery plaese before Request execute:
 		}
 		/dedline
 
-//----------------------------------------------------
 *if since the establishment in less than a hour then allowed 
 another deadline*
 
