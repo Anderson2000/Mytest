@@ -1,7 +1,9 @@
 # Bookmark 
 
-before: the html page must include ```html <head><meta name="csrf-token" content="{{ csrf_token() }}" /></head>```
-if uoy used jqery plaese before Request execute: $.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});
+before: The html page must include ```html <head><meta name="csrf-token" content="{{ csrf_token() }}" /></head>```
+
+If uoy used jqery plaese before Request execute: 
+`$.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});`
 
 
 ##get/bookmarks/
@@ -117,7 +119,7 @@ if uoy used jqery plaese before Request execute: $.ajaxSetup({headers: {'X-CSRF-
 		Request json: {comment: comment}
 		Request example: {"comment": "thank you"} 
 	Parameters:
-		comment : Comment for the special bookmark
+		comment : update comment for the special bookmark
 
 	respond json example:
 		{
@@ -130,8 +132,8 @@ if uoy used jqery plaese before Request execute: $.ajaxSetup({headers: {'X-CSRF-
 		/dedline
 
 //----------------------------------------------------
-if since the establishment in less than a hour then allowed 
-another deadline
+*if since the establishment in less than a hour then allowed 
+another deadline*
 
 ##destroy/comment/{comment_uid?}
 
@@ -141,8 +143,7 @@ another deadline
 		
 	respond example: true/dedline
 		
-//----------------------------------------------------
-if since the establishment in less than a hour then allowed 
-another deadline
+*if since the establishment in less than a hour then allowed 
+another deadline*
 
 
