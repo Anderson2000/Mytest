@@ -1,6 +1,6 @@
 # Bookmark 
 
-before: the html page must include <head><meta name="csrf-token" content="{{ csrf_token() }}" /></head>
+before: the html page must include ```html <head><meta name="csrf-token" content="{{ csrf_token() }}" /></head>```
 if uoy used jqery plaese before Request execute: $.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});
 
 
